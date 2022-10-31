@@ -28,13 +28,11 @@ function App() {
     });
   }
   function deleteItem(id) {
-    console.log(id);
-    addNote((prevValue) => {
-      return prevValue.filter((note) => {
-        return note.id !== id;
-        // return note.id !== id;
-      });
-    });
+    return addNote((prevNotes)=>{
+      return prevNotes.filter((note)=>{
+        return note.id !== id
+      })
+    })
   }
   return (
     <div>
