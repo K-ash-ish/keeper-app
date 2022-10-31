@@ -28,11 +28,11 @@ function App() {
     });
   }
   function deleteItem(id) {
-    return addNote((prevNotes)=>{
-      return prevNotes.filter((note)=>{
-        return note.id !== id
-      })
-    })
+    return addNote((prevNotes) => {
+      return prevNotes.filter((note) => {
+        return note.id !== id;
+      });
+    });
   }
   return (
     <div>
